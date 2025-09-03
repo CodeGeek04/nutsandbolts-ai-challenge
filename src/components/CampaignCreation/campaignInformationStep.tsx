@@ -121,7 +121,7 @@ export function CampaignInformationStep({ onNext, onBack }: CampaignInformationS
             2. Add Campaign Information
           </h2>
           <p className="text-gray-600 text-lg">
-            Upload a file or paste a link — we'll pull the product and campaign details for you.
+            Upload a file or paste a link &mdash; we&apos;ll pull the product and campaign details for you.
           </p>
         </div>
 

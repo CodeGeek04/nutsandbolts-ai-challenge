@@ -20,7 +20,7 @@ Key Features:
 • Bear-proof certified and virtually indestructible
 • Holds up to 54 cans with recommended 2:1 ice-to-content ratio`)
   
-  const [campaignRules, setCampaignRules] = useState([
+  const [campaignRules] = useState([
     {
       id: 1,
       description: "This campaign is strictly for gifting; no monetary compensation will be provided. If asked about payment, inform the influencer that this opportunity is for gifting only and paid promotions are not being considered at this time."
@@ -47,7 +47,7 @@ Key Features:
           2. Review Campaign Information
         </h2>
         <p className="text-gray-600 text-lg">
-          We've pulled product info and campaign rules from your files. Review and edit if needed
+          We&apos;ve pulled product info and campaign rules from your files. Review and edit if needed
         </p>
       </div>
 

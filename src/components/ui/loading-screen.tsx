@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import Image from "next/image"
 
 interface LoadingScreenProps {
@@ -11,23 +11,11 @@ interface LoadingScreenProps {
 }
 
 export function LoadingScreen({ title, subtitle, duration = 3000, onComplete }: LoadingScreenProps) {
-  const [progress, setProgress] = useState(0)
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress(prev => {
-        if (prev >= 100) {
-          clearInterval(interval)
-          if (onComplete) {
-            setTimeout(onComplete, 300)
-          }
-          return 100
-        }
-        return prev + (100 / (duration / 100))
-      })
-    }, 100)
-
-    return () => clearInterval(interval)
+    if (onComplete) {
+      const timer = setTimeout(onComplete, duration)
+      return () => clearTimeout(timer)
+    }
   }, [duration, onComplete])
 
   return (

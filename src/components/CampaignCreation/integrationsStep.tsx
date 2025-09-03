@@ -15,7 +15,7 @@ export function IntegrationsStep({ onNext, onBack }: IntegrationsStepProps) {
   const [googleSheetEnabled, setGoogleSheetEnabled] = useState(true)
   const [shopifyEnabled, setShopifyEnabled] = useState(false)
   const [sheetUrl, setSheetUrl] = useState("https://docs.google.com/spreadsheets/d/...")
-  const [trackingRules, setTrackingRules] = useState([
+  const [trackingRules] = useState([
     {
       id: 1,
       type: "Email",
@@ -128,7 +128,7 @@ export function IntegrationsStep({ onNext, onBack }: IntegrationsStepProps) {
                     placeholder="https://docs.google.com/spreadsheets/d/..."
                   />
                   <p className="text-sm text-gray-500 mt-2">
-                    Tip: Set your sheet permissions to 'Anyone with the link can edit'
+                    Tip: Set your sheet permissions to &apos;Anyone with the link can edit&apos;
                   </p>
                 </div>
               </div>
@@ -150,7 +150,7 @@ export function IntegrationsStep({ onNext, onBack }: IntegrationsStepProps) {
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2">
-                          <span className="text-sm font-medium">In "{rule.type}"</span>
+                          <span className="text-sm font-medium">In &ldquo;{rule.type}&rdquo;</span>
                         </div>
                         <p className="text-sm text-gray-600 leading-relaxed">{rule.description}</p>
                       </div>
