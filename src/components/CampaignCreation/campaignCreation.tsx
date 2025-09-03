@@ -101,8 +101,8 @@ export function CampaignCreation() {
       {/* Main Step Content */}
       <div className="flex-1 p-8">
         <div className="h-full max-w-6xl mx-auto">
-          <div className="h-full bg-white rounded-2xl border border-purple-200 shadow-lg overflow-hidden">
-            <div className="h-full p-10 overflow-y-auto">
+          <div className="h-[550px] bg-white rounded-2xl border border-purple-200 shadow-lg overflow-hidden">
+            <div className="h-full p-8 overflow-y-auto">
               {renderStep()}
             </div>
           </div>

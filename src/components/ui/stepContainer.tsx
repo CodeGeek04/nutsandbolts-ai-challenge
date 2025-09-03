@@ -6,7 +6,7 @@ interface StepContainerProps {
 
 export function StepContainer({ children }: StepContainerProps) {
   return (
-    <div className="h-[450px] flex flex-col">
+    <div className="h-full flex flex-col justify-between">
       {children}
     </div>
   )

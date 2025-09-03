@@ -5,12 +5,12 @@ export function CampaignSidebar() {
   return (
     <div className="w-16 bg-white border-r border-gray-200 flex flex-col">
       {/* Logo */}
-      <div className="flex items-center justify-center p-4 border-b border-gray-200">
+      <div className="flex items-center justify-center p-4 py-6 border-b border-gray-200">
         <Image
           src="/Cheerful_bot_icon3 1.png"
           alt="Cheerful"
-          width={24}
-          height={24}
+          width={26}
+          height={26}
           className="rounded"
         />
       </div>
